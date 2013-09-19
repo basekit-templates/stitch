@@ -1,0 +1,146 @@
+{
+	"name":"Stitch",
+	"thumbnail":"stitch.png",
+	"screenshot":"stitch.png",
+    "tags": {
+    "en": ["colorful", "bright", "clean", "vintage", "business", "colourful", "classic", "pattern", "texture", "background", "fashion", "retail"],
+    "es": ["colorido", "claro", "limpio", "vintage", "negocio", "clasico", "patron", "textura", "fondo", "moda", "minorista"],
+    "br": ["colorido", "claro", "limpio", "vintage", "negócios", "clássico", "padrão", "textura", "fundo", "moda", "varejo"]
+    },
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#f9f6eb",
+            "color2":"#ff0000",
+            "color3":"#000000",
+            "color4":"#444444",
+            "color5":"#484747",
+            "color6":"#484747",
+            "color7":"#f9f6eb"
+        },
+        "Swatch 2": {
+            "color1":"#f2f2f2",
+            "color2":"#ff0000",
+            "color3":"#000000",
+            "color4":"#444444",
+            "color5":"#484747",
+            "color6":"#484747",
+            "color7":"#f2f2f2"
+        },
+        "Swatch 3": {
+            "color1":"#faf7f5",
+            "color2":"#ff0000",
+            "color3":"#000000",
+            "color4":"#444444",
+            "color5":"#484747",
+            "color6":"#484747",
+            "color7":"#faf2f7"
+        },
+        "Swatch 4": {
+            "color1":"#f7f8fc",
+            "color2":"#ff0000",
+            "color3":"#000000",
+            "color4":"#444444",
+            "color5":"#484747",
+            "color6":"#484747",
+            "color7":"#f7f8fc"
+        },
+        "Swatch 5": {
+            "color1":"#f5faf8",
+            "color2":"#ff0000",
+            "color3":"#000000",
+            "color4":"#444444",
+            "color5":"#484747",
+            "color6":"#484747",
+            "color7":"#f5faf8"
+        }
+    },
+    "fontSwatch": {
+       "title": "Georgia",
+        "font1": {
+            "font-family": "Georgia",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Georgia",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Georgia",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Georgia",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Georgia",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Georgia",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "23px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+        },
+        "font7": {
+            "font-family": "Georgia",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "1px",
+            "background-color": "darken(@color-swatch1,20%)",
+            "background-color-hover": "darken(@color-swatch1,30%)"
+        },
+        "font8": {
+            "font-family": "Georgia",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Georgia",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Georgia",
+            "font-size": "25px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        }
+    }
+}
