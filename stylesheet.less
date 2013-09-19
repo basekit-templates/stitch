@@ -158,9 +158,12 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default header {
-    border-bottom: 1px solid  lighten(@color-swatch5,20%);
-    padding-bottom: 25px;
+.bk-pt-default .canvas {
+  padding: 0;
+}
+
+.bk-pt-default .inner-bg {
+  border-top: none;
 }
 
 /* ===============================
@@ -1602,19 +1605,28 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
     .canvas { 
       border: none;
-      max-width: 100%;
+      width: 100%;
       margin: 0 auto;
       padding: 0;
     }
 
     .inner-bg {
       margin: 0 auto;
+      padding: 0;
       border-top: none;
     }
 
     footer {
     background-color: darken(@color-swatch1,5%);
-  }
+    }
+
+
+    /* DEFAULT PAGE TYPE */
+
+    .bk-pt-default .inner-bg {
+      border-top: 1px dashed lighten(@color-swatch5,55%);
+    }
+
 
     /* COMPANY HEADER */
 
