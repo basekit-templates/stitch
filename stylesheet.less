@@ -500,8 +500,8 @@ footer h4 {
   margin: 20px 0 0;
 }
 
-.widget.feature button {
-  padding: 20px 4px;
+.widget.feature .feature-bgimg .content button {
+  padding: 20px 10px;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   font-size: @font-swatch7-font-size;
@@ -517,44 +517,44 @@ padding: 15px 25px;
 border: 1px dashed @color-swatch1;
 }
 
-.widget.feature button:hover {
+.widget.feature .feature-bgimg .content button:hover {
   background-color: @font-swatch7-background-color-hover; 
   cursor: pointer;
 }
 
-.widget.feature button.btn.justifyleft
+.widget.feature .feature-bgimg .content button.btn.justifyleft
 {
     text-align: left;
 }
 
-.widget.feature button.btn.justifycenter
+.widget.feature .feature-bgimg .content button.btn.justifycenter
 {
     text-align: center;
 }
 
-.widget.feature button.btn.justifyright
+.widget.feature .feature-bgimg .content button.btn.justifyright
 {
     text-align: right;
 }
 
-.widget.feature button.btn.justifyfull
+.widget.feature .feature-bgimg .content button.btn.justifyfull
 {
     text-align: justify;
 }
 
-.widget.feature button.btn.italic {
+.widget.feature .feature-bgimg .content button.btn.italic {
     font-style: italic;
 }
 
-.widget.feature button.btn.bold {
+.widget.feature .feature-bgimg .content button.btn.bold {
     font-weight: bold;
 }
 
-.widget.feature button span {
+.widget.feature .feature-bgimg .content button span {
     vertical-align: center;
 }
 
-.widget.feature button i {
+.widget.feature .feature-bgimg .content button i {
     margin-right: 5px;
 }
 
@@ -783,6 +783,8 @@ border: 1px dashed @color-swatch1;
 hr.line {
    width: 100%;
    border: 1px dashed lighten(@color-swatch5,55%);
+   background-color: transparent;
+   height: auto;
 }
 
 hr.line.align-left {
@@ -1215,6 +1217,11 @@ hr.line.align-right {
     border: 1px dashed lighten(@color-swatch5,40%);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+}
+
+footer .widget.profile .bk-profile-socialicons span a {
+  background-color: transparent;
 }
 
 .widget.socialicons span a:hover,
