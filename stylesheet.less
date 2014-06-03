@@ -173,8 +173,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
-    margin: 30px 0 0;
+.bk-header {
+    margin: 50px 0 30px;
     background-color: transparent;
 }
 
@@ -210,9 +210,9 @@ header {
 
 .widget.logo {
   display: block;
-  margin-right: 2px;
+  margin-right: 10px;
   float: left;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 /* ===============================
@@ -316,7 +316,6 @@ footer h4 {
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  padding: 26px 0 20px 0;
 }
 
 .widget.extendednavigation ul li.folder {
@@ -1742,25 +1741,23 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
     /* COMPANY HEADER */
 
-    .widget.companyheader {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+    .companyheader {
+        width: 90%;
     }
 
     /* NAV */
 
 
-    .widget.extendednavigation {
-        display: block;
-        width: 100%;
-        margin-top: 20px;
-    }
+  .widget.extendednavigation {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+  }
 
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    margin: 0;
+    margin: 30px 0 0;
     border-top: 1px dashed lighten(@color-swatch5,55%);
   }
 
@@ -1790,7 +1787,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     padding: 0;
   }
 
-  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  .widget.extendednavigation ul li a {
       padding: 5px 0;
       margin: 0;
   }
