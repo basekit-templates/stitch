@@ -1,5 +1,4 @@
-@import "@{templateCommon}/paypal.less";
-@import "@{templateCommon}/dropbox.less";
+@import "@{templateCommon}/basekit-bootstrap.less";
 
 
 body {
@@ -140,7 +139,7 @@ ul, ol, li {
    =============================== */
 
 .canvas { 
-  background-color: @color-swatch1;
+  background-color: transparent;
   border: 1px dashed lighten(@color-swatch5,55%);
   max-width: 1000px;
   margin: 20px auto;
@@ -174,15 +173,16 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
-    margin: 30px 0 0;
-    background-color: @color-swatch1;
+.bk-header {
+    margin: 40px 0;
+    background-color: transparent;
 }
 
 .companyheader {
     display: block;
     float: left;
     padding: 0;
+    width: 25%;
 }
 
 /* COMPANY NAME */
@@ -210,9 +210,9 @@ header {
 
 .widget.logo {
   display: block;
-  margin-right: 2px;
+  margin-right: 10px;
   float: left;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 /* ===============================
@@ -220,7 +220,7 @@ header {
    =============================== */
 
 footer {
-    background-color: @color-swatch1;
+    background-color: transparent;
     padding: 2em 0;
     margin-top: 3em;
     text-align: center;
@@ -290,14 +290,11 @@ footer h4 {
   float: right;
   position: relative;
   background-color: transparent;
-}
-
-.widget.extendednavigation a.pull {
-  display: none;
+  width: 75%;
+  margin-top: 10px;
 }
 
 .widget.extendednavigation ul {
-  float: left;
   padding: 0;
   margin: 0;
 }
@@ -320,21 +317,14 @@ footer h4 {
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  padding: 26px 0 20px 0;
 }
 
 .widget.extendednavigation ul li.folder {
-  display: block;
-  background-image: image('/images/arrow-down.png');
-  background-position: right center;
-  background-repeat: no-repeat;
-  padding-right: 10px;
-  cursor: pointer;
+
 }
 
 .widget.extendednavigation ul li.folder:hover {
-  background-image: image('/images/arrow-down-hov.png');
-  color: @font-swatch6-color-hover;
+
 }
 
 
@@ -456,10 +446,11 @@ footer h4 {
   height: 700px;
 }
 
- .widget.feature .content {
+.widget.feature .feature-bgimg .content {
   vertical-align: bottom;
   text-align: center;
-  height: 700px;
+  min-height: 200px;
+  display: table-cell;
 }
 
 .widget.feature .content .spare {
@@ -501,8 +492,8 @@ footer h4 {
   margin: 20px 0 0;
 }
 
-.widget.feature button {
-  padding: 20px 4px;
+.widget.feature .feature-bgimg .content button {
+  padding: 20px 10px;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
   font-size: @font-swatch7-font-size;
@@ -518,44 +509,44 @@ padding: 15px 25px;
 border: 1px dashed @color-swatch1;
 }
 
-.widget.feature button:hover {
+.widget.feature .feature-bgimg .content button:hover {
   background-color: @font-swatch7-background-color-hover; 
   cursor: pointer;
 }
 
-.widget.feature button.btn.justifyleft
+.widget.feature .feature-bgimg .content button.btn.justifyleft
 {
     text-align: left;
 }
 
-.widget.feature button.btn.justifycenter
+.widget.feature .feature-bgimg .content button.btn.justifycenter
 {
     text-align: center;
 }
 
-.widget.feature button.btn.justifyright
+.widget.feature .feature-bgimg .content button.btn.justifyright
 {
     text-align: right;
 }
 
-.widget.feature button.btn.justifyfull
+.widget.feature .feature-bgimg .content button.btn.justifyfull
 {
     text-align: justify;
 }
 
-.widget.feature button.btn.italic {
+.widget.feature .feature-bgimg .content button.btn.italic {
     font-style: italic;
 }
 
-.widget.feature button.btn.bold {
+.widget.feature .feature-bgimg .content button.btn.bold {
     font-weight: bold;
 }
 
-.widget.feature button span {
+.widget.feature .feature-bgimg .content button span {
     vertical-align: center;
 }
 
-.widget.feature button i {
+.widget.feature .feature-bgimg .content button i {
     margin-right: 5px;
 }
 
@@ -784,6 +775,8 @@ border: 1px dashed @color-swatch1;
 hr.line {
    width: 100%;
    border: 1px dashed lighten(@color-swatch5,55%);
+   background-color: transparent;
+   height: auto;
 }
 
 hr.line.align-left {
@@ -1001,7 +994,6 @@ hr.line.align-right {
 .widget.twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch5-font-family;
     color: lighten(@font-swatch5-color,30%);
-    text-transform: uppercase;
 }
 
 .widget.twitter .twitter-content time, .widget.twitter .twitter-content span {
@@ -1016,7 +1008,7 @@ hr.line.align-right {
 .widget.contactform form {
     display: block;
     margin-bottom: 20px;
-    background-color: @color-swatch1;
+    background-color: transparent;
 }
 
 .widget.contactform fieldset {
@@ -1217,6 +1209,11 @@ hr.line.align-right {
     border: 1px dashed lighten(@color-swatch5,40%);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+}
+
+footer .widget.profile .bk-profile-socialicons span a {
+  background-color: transparent;
 }
 
 .widget.socialicons span a:hover,
@@ -1289,6 +1286,70 @@ hr.line.align-right {
     background-image: image('/images/social/socialicons-youtube.png')
 }
 
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.blogpostlist {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
+}
+
 
 
 /* ===============================
@@ -1349,7 +1410,6 @@ hr.line.align-right {
 .widget.profile .twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch5-font-family;
     color: lighten(@font-swatch5-color,30%);
-    text-transform: uppercase;
 }
 
 .widget.profile .twitter .twitter-content p {
@@ -1463,7 +1523,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
  .widget.signupform {
     display: block;
     margin-bottom: 20px;
-    background-color: @color-swatch1;
+    background-color: transparent;
 }
 
 .widget.signupform fieldset {
@@ -1681,50 +1741,23 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
     /* COMPANY HEADER */
 
-    .widget.companyheader {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+    .companyheader {
+        width: 90%;
     }
 
     /* NAV */
 
 
-    .widget.extendednavigation {
-        display: block;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-     /* NAV ICON */
-
-  .widget .extendednavigation a.pull {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: -19px;
+  .widget.extendednavigation {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
   }
 
-    .widget .extendednavigation a.pull:after {
-    content:"";
-    background: image('/images/nav-icon.png') no-repeat;
-    background-position: center;
-    width: 30px;
-    height: 30px;
-    border: 1px dashed lighten(@color-swatch5,55%);
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: -50px;
-  }
-
-  /* NAV */
-
-  
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    margin: 0;
+    margin: 30px 0 0;
     border-top: 1px dashed lighten(@color-swatch5,55%);
   }
 
@@ -1754,7 +1787,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     padding: 0;
   }
 
-  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  .widget.extendednavigation ul li a {
       padding: 5px 0;
       margin: 0;
   }
