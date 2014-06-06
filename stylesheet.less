@@ -319,15 +319,6 @@ footer h4 {
   display: block;
 }
 
-.widget.extendednavigation ul li.folder {
-
-}
-
-.widget.extendednavigation ul li.folder:hover {
-
-}
-
-
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
   padding: 1px 17px;
@@ -425,6 +416,10 @@ footer h4 {
 }
 .main .widget.extendednavigation {
   *zoom: 1;
+}
+
+.widget .extendednavigation ul li.folder {
+  margin-right:0;
 }
 
 
@@ -1881,6 +1876,13 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     .widget.responsiveslideshow .slideshow-image-list, 
     .widget.responsiveslideshow .slideshow-widget {
         height:400px;
+    }
+    .widget .extendednavigation ul.align-right li.folder:after {
+        left: 5px;
+        right: inherit;
+    }
+    .widget .extendednavigation li > .text, .widget.extendednavigation ul li.folder .text {
+      padding:0;
     }
 
 }
