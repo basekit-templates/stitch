@@ -173,8 +173,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
-    margin: 30px 0 0;
+.bk-header {
+    margin: 40px 0;
     background-color: transparent;
 }
 
@@ -182,6 +182,7 @@ header {
     display: block;
     float: left;
     padding: 0;
+    width: 25%;
 }
 
 /* COMPANY NAME */
@@ -209,9 +210,9 @@ header {
 
 .widget.logo {
   display: block;
-  margin-right: 2px;
+  margin-right: 10px;
   float: left;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 /* ===============================
@@ -289,10 +290,11 @@ footer h4 {
   float: right;
   position: relative;
   background-color: transparent;
+  width: 75%;
+  margin-top: 10px;
 }
 
 .widget.extendednavigation ul {
-  float: left;
   padding: 0;
   margin: 0;
 }
@@ -315,7 +317,6 @@ footer h4 {
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  padding: 26px 0 20px 0;
 }
 
 .widget.extendednavigation ul li.folder {
@@ -325,7 +326,6 @@ footer h4 {
 .widget.extendednavigation ul li.folder:hover {
 
 }
-
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
@@ -373,7 +373,6 @@ footer h4 {
 .widget.extendednavigation li:hover > ul > li {
   display: block;
   width: 100%;
-  text-align: left;
   border-bottom: 1px dashed lighten(@color-swatch5,55%);
   padding: 10px 0;
 }
@@ -426,6 +425,10 @@ footer h4 {
   *zoom: 1;
 }
 
+.widget .extendednavigation ul li.folder {
+  margin-right:0;
+}
+
 
 /* ===============================
    FEATURE
@@ -445,10 +448,11 @@ footer h4 {
   height: 700px;
 }
 
- .widget.feature .content {
+.widget.feature .feature-bgimg .content {
   vertical-align: bottom;
   text-align: center;
-  height: 700px;
+  min-height: 200px;
+  display: table-cell;
 }
 
 .widget.feature .content .spare {
@@ -1289,7 +1293,7 @@ footer .widget.profile .bk-profile-socialicons span a {
    =============================== */
 
 .widget {
-    &.bloglistposts {
+    &.blogpostlist {
         .blog-post-item {
             border-bottom: 1px dotted @color-swatch5;
         }
@@ -1739,25 +1743,23 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
     /* COMPANY HEADER */
 
-    .widget.companyheader {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+    .companyheader {
+        width: 90%;
     }
 
     /* NAV */
 
 
-    .widget.extendednavigation {
-        display: block;
-        width: 100%;
-        margin-top: 20px;
-    }
+  .widget.extendednavigation {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+  }
 
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    margin: 0;
+    margin: 30px 0 0;
     border-top: 1px dashed lighten(@color-swatch5,55%);
   }
 
@@ -1787,7 +1789,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     padding: 0;
   }
 
-  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  .widget.extendednavigation ul li a {
       padding: 5px 0;
       margin: 0;
   }
@@ -1826,6 +1828,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
 
   .widget.extendednavigation li:hover > ul > li > a {
     padding-left: 10px;
+    padding-right:10px;
   }
 
 
@@ -1881,6 +1884,13 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     .widget.responsiveslideshow .slideshow-image-list, 
     .widget.responsiveslideshow .slideshow-widget {
         height:400px;
+    }
+    .widget .extendednavigation ul.align-right li.folder:after {
+        left: 5px;
+        right: inherit;
+    }
+    .widget .extendednavigation li > .text, .widget.extendednavigation ul li.folder .text {
+      padding:0;
     }
 
 }
