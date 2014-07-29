@@ -123,7 +123,7 @@ header.bk-header {
 }
 
 .companyheader {
-    display: block;
+    display: inline-block;
     padding: 0;
     width: 25%;
 }
@@ -227,7 +227,7 @@ footer.bk-footer h4 {
   position: relative;
   background-color: transparent;
   width: 75%;
-  margin-top: 10px;
+  display:inline-block;
 }
 
 .widget.extendednavigation ul {
@@ -1502,6 +1502,10 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
         width: 90%;
     }
 
+    header.bk-header {
+        margin: 20px 0 0;
+    }
+
     /* NAV */
 
 
@@ -1594,6 +1598,15 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
 
     .widget.extendednavigation ul li a {
       padding: 15px 0;
+    }
+
+    .widget.extendednavigation {
+        margin-top:0;
+        top: -40px;
+    }
+
+    .widget .extendednavigation a.pull {
+      right:0;
     }
 
 
