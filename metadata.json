@@ -3,7 +3,9 @@
 	"thumbnail":"stitch.png",
 	"screenshot":"stitch.png",
 	"templateType":"standard",
-    
+            "pageTypes": [
+        "home"
+    ],
     "tags": {
     "en": ["colorful", "bright", "clean", "vintage", "business", "colourful", "classic", "pattern", "texture", "background", "fashion", "retail"],
     "es": ["colorido", "claro", "limpio", "vintage", "negocio", "clasico", "patron", "textura", "fondo", "moda", "minorista"],
