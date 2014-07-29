@@ -729,7 +729,7 @@ hr.line.align-right {
     font-size:@font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     line-height:@font-swatch5-line-height;
-    color:darken(@font-swatch5-color,40%);
+    color:lighten(@font-swatch5-color,100%);
     letter-spacing: @font-swatch5-letter-spacing;
 }
 .widget.gallery li span.inner:hover .title {
@@ -929,7 +929,6 @@ hr.line.align-right {
   
 .widget.contactform fieldset button.btn:hover {
   background-color: @font-swatch7-background-color-hover;
-  color: @color-swatch3;
   background-image: image('/images/button-black-arrow.svg');
   cursor: pointer;
 }
@@ -1032,17 +1031,15 @@ hr.line.align-right {
     border: 1px dashed lighten(@color-swatch5,40%);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
 }
 
 footer.bk-footer .widget.profile .bk-profile-socialicons span a {
-  background-color: transparent;
 }
 
 .widget.socialicons span a:hover,
 .widget.profile 
 .bk-profile-socialicons span a:hover {
-    background-color: darken(@color-swatch1,3%);
+    background-color: darken(@color-swatch3,10%);
 }
 /* ===============================
   BLOG
@@ -1229,7 +1226,7 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
 }
 
 .widget.profile fieldset button.btn {
-    padding: 20px 22px;
+    padding: 8px 22px;
     margin: 0;
     border: none;
     font-family: @font-swatch7-font-family;
