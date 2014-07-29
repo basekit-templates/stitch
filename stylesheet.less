@@ -124,7 +124,6 @@ header.bk-header {
 
 .companyheader {
     display: block;
-    float: left;
     padding: 0;
     width: 25%;
 }
@@ -141,7 +140,6 @@ header.bk-header {
 
 .widget.companyname a {
   padding: 0;
-  float: left;
 }
 
 /* LOGO */
@@ -149,8 +147,14 @@ header.bk-header {
 .widget.logo {
   display: block;
   margin-right: 10px;
-  float: left;
   padding-top: 10px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
@@ -312,6 +316,12 @@ footer.bk-footer h4 {
 
 .widget.extendednavigation li:hover > ul > li > a .text {
   margin-left: 0;
+}
+
+.extendednavigation li.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
 }
 
 /* EXTENDED NAVIGATION - INSIDE ZONE */
@@ -1576,6 +1586,16 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
     padding-right:10px;
   }
 
+      /* NAV */
+
+    .widget.extendednavigation ul li {
+      padding:0;
+    }
+
+    .widget.extendednavigation ul li a {
+      padding: 15px 0;
+    }
+
 
     /* FEATURE */
 
@@ -1661,6 +1681,16 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
 
     footer.bk-footer .footer2 .columns-two-right {
         text-align: left;
+    }
+
+    /* NAV */
+
+    .widget.extendednavigation ul li {
+      padding:0;
+    }
+
+    .widget.extendednavigation ul li a {
+      padding: 10px 0;
     }
 
 
