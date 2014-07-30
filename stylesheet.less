@@ -622,6 +622,13 @@ button, button.btn, .blogsearch form button, .widget.dropbox button {
   background-color: @font-swatch7-background-color-hover!important;
 }
 
+.blogsearch form button {
+  padding:8px 14px;
+  &:hover {
+    background-color: @font-swatch7-background-color-hover;
+  }
+}
+
 /* ===============================
    LINE WIDGET
    =============================== */
@@ -849,13 +856,12 @@ hr.line.align-right {
 
 .widget.twitter .twitter-profile-pic {
     float: left;
-    margin: 5px 20px 0;
-    height: 110px;
 }
 
 .widget.twitter .twitter-content span.bk-full-name {
     font-family: @font-swatch5-font-family;
     color: lighten(@font-swatch5-color,30%);
+    line-height:60px;
 }
 
 .widget.twitter .twitter-content time, .widget.twitter .twitter-content span {
@@ -930,7 +936,7 @@ hr.line.align-right {
 }
 
 .widget.contactform fieldset button.btn {
-    padding: 20px 22px;
+    padding: 15px 22px;
     margin: 0;
     border: none;
     font-family: @font-swatch7-font-family;
