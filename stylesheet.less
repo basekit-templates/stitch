@@ -611,6 +611,17 @@ border: 1px dashed @color-swatch1;
   cursor: pointer;
 }
 
+button, button.btn, .blogsearch form button, .widget.dropbox button {
+   background-color: @font-swatch7-background-color;
+   &:hover {
+    background-color: @font-swatch7-background-color-hover;
+   }
+}
+
+.widget.dropbox button:hover {
+  background-color: @font-swatch7-background-color-hover!important;
+}
+
 /* ===============================
    LINE WIDGET
    =============================== */
@@ -999,6 +1010,10 @@ hr.line.align-right {
   background-color: @font-swatch7-background-color-hover;
 }
 
+.widget.tweet a:hover {
+    background-image: image('/images/social/socialicons-twitter.png');
+}
+
 /* ==================================
    SOCIAL BAR WIDGET / SOCIAL PROFILE
    =============================== */
@@ -1045,6 +1060,15 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch3,10%);
 }
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+  min-height:32px;
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
+}
+
 /* ===============================
   BLOG
    =============================== */
@@ -1098,7 +1122,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 .blogsearch {
     form {
         button {
-            padding: 10px;
+            padding:6px 14px;
             color: @font-swatch7-color;
             font-size: @font-swatch6-font-size;
             font-weight: @font-swatch6-font-weight;
@@ -1109,6 +1133,21 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     }
 }
 
+.blog-post-sharing {
+  margin-top:20px
+}
+
+.blog-post-feature-image-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 2em;
+  background-size: cover;
+  background-position: center;
+  img {
+    display: none;
+  }
+}
 
 
 /* ===============================
@@ -1127,7 +1166,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     display: block;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
-    color: lighten(@font-swatch5-color,30%);
+    color: @font-swatch5-color;
     line-height: @font-swatch5-line-height;
     font-weight: @font-swatch5-font-weight;
 }
@@ -1188,6 +1227,9 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
   display: inline;
 }
 
+.widget.twitter .twitter-content span.bk-full-name {
+    line-height:60px;
+}
 
 
 /* FOOTER PROFILE - SINGLE EMAIL FORM */
@@ -1221,7 +1263,6 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
     margin-top: 6px;
     margin-bottom: 20px;
     padding: 0;
-    text-align: center;
 }
 
 .widget.profile fieldset input:focus {
@@ -1245,6 +1286,99 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
 .widget.profile fieldset button.btn:hover {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
+}
+
+/* ECOM */
+
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: lighten(@color-swatch1,50%);
+    background-position-x: 98%;
+    background-position-y: 53%;
+    border:2px solid @color-swatch7;
+    border-radius:0;
+}
+
+.widget.ecomcheckout .delivery select {
+  -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-position-x: 99%;
+    background-position-y: 53%;
+    border:2px solid @color-swatch7;
+    background-color: lighten(@color-swatch1,50%);
+    border-radius:0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: lighten(@color-swatch1,50%);
+    background-position-x: 95%;
+    background-position-y: 53%;
+    border:2px solid @color-swatch7;
+    border-radius:0;
+}
+
+select::-ms-expand {
+   display: none;
+}
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+   select {
+   -moz-appearance: none;
+   text-indent: 0.01px
+   ;
+   text-overflow: '';
+}
+
+input, textarea {
+  border:1px solid darken(@color-swatch1,3%);
+}
+
+.productlist-search button.btn {
+  padding:6px 14px;
 }
 
 /* ===============================
@@ -1541,6 +1675,10 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
     padding: 16px 0;
   }
 
+  .widget .extendednavigation ul li:hover ul {
+    padding: 10px 0;
+  }
+
   .widget .extendednavigation li {
     width: 100%;
     padding: 0;
@@ -1558,7 +1696,7 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
+      margin: 10px 0;
       padding: 0;
   }
 
@@ -1669,6 +1807,17 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
       padding:0;
     }
 
+     /* ECOM */
+
+  select {
+    width:100%;
+  }
+
+  .widget.ecomproductslist label {
+    display:block;
+  }
+
+
 }
 
 /* ===============================
@@ -1704,6 +1853,18 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
       padding: 10px 0;
     }
 
+    .widget.extendednavigation li:hover > ul > li {
+      margin:0;
+      padding:0!important;
+    }
+
+    .widget.extendednavigation li:hover > ul > li > a {
+      padding: 8px 8px;
+    }
+
+    .widget.extendednavigation ul li.folder {
+      padding: 10px 0;
+    }
 
     /* PROFILE */
 
