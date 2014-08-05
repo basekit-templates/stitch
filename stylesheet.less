@@ -1,10 +1,9 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+@import "@{templateLocal}/css/ecom.less";
 
 body {
     background-color: @color-swatch1;
-    margin: 0;
-    padding: 0;
 }
 
 .wrapper {
@@ -430,6 +429,7 @@ border: 1px dashed @color-swatch1;
   background-color: @font-swatch7-background-color-hover; 
   cursor: pointer;
 }
+
 /* ===============================
    FEATURE LAYOUTS
    =============================== */
@@ -1229,110 +1229,6 @@ footer.bk-footer .widget.profile .twitter span, .widget.profile .twitter span a 
     cursor: pointer;
 }
 
-/* ECOM */
-
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
-    -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-color: lighten(@color-swatch1,50%);
-    background-position-x: 98%;
-    background-position-y: 53%;
-    border:2px solid @color-swatch7;
-    border-radius:0;
-}
-
-.widget.ecomcheckout .delivery select {
-  -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-position-x: 99%;
-    background-position-y: 53%;
-    border:2px solid @color-swatch7;
-    background-color: lighten(@color-swatch1,50%);
-    border-radius:0;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: window;
-    appearance: none;
-    outline: none !important;
-    -moz-outline-style: none;
-    border: 1px solid @color-swatch5, 25%;
-    position: relative;
-    background: transparent;
-    padding: 10px 23px 10px 10px;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-image: image('/images/arrow.png');
-    background-position: right 6% center;
-    background-repeat: no-repeat;
-    border: 0;
-    background-color: lighten(@color-swatch1,50%);
-    background-position-x: 95%;
-    background-position-y: 53%;
-    border:2px solid @color-swatch7;
-    border-radius:0;
-}
-
-select::-ms-expand {
-   display: none;
-}
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
-   select {
-   -moz-appearance: none;
-   text-indent: 0.01px
-   ;
-   text-overflow: '';
-}
-
-input, textarea {
-  border:1px solid darken(@color-swatch1,3%);
-}
-
-.productlist-search button.btn {
-  padding:6px 14px;
-}
-
-.btn.ecom-product-go-to-checkout-btn {
-  color:@font-swatch7-color;
-}
-
-.checkout-legal-links {
-  padding:1em 0 1em 1.5em;
-}
-
-  .widget.ecomproductslist label {
-    display:block;
-  }
 
 /* ===============================
    LINKED IN
