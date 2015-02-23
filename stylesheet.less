@@ -74,7 +74,7 @@ ul, ol, li {
 }
 
 .bk-content-text ul, .bk-content-text ol, .bk-content-text li {
-  padding-left: 1.4em; 
+  padding-left: 1.4em;
   text-indent: -1.4em;
 }
 
@@ -82,7 +82,7 @@ ul, ol, li {
    CUSTOM CSS
    =============================== */
 
-.canvas { 
+.canvas {
   background-color: transparent;
   border: 1px dashed lighten(@color-swatch5,55%);
   max-width: 1000px;
@@ -258,7 +258,7 @@ footer.bk-footer h4 {
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
   letter-spacing: @font-swatch6-letter-spacing;
-  
+
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
@@ -415,7 +415,7 @@ footer.bk-footer h4 {
   font-weight:@font-swatch7-font-weight;
   font-size: @font-swatch7-font-size;
   letter-spacing: @font-swatch7-letter-spacing;
-  background-color: @font-swatch7-background-color; 
+  background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
   border: none;
@@ -427,7 +427,7 @@ border: 1px dashed @color-swatch1;
 }
 
 .widget.feature .feature-bgimg .content button:hover {
-  background-color: @font-swatch7-background-color-hover; 
+  background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
 }
 /* ===============================
@@ -488,6 +488,9 @@ border: 1px dashed @color-swatch1;
     margin: 4px 0;
     cursor: pointer;
     display: inline-block;
+    .more, .less {
+      color: @font-swatch7-color;
+    }
 }
 
 .widget.content span.expand:hover,
@@ -604,7 +607,7 @@ border: 1px dashed @color-swatch1;
 }
 
 
-.widget.button button:hover 
+.widget.button button:hover
 {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
@@ -882,7 +885,7 @@ hr.line.align-right {
     text-decoration: none;
     letter-spacing: 1px;
 }
-  
+
 .widget.contactform fieldset button.btn:hover {
   background-color: @font-swatch7-background-color-hover;
   background-image: image('/images/button-black-arrow.svg');
@@ -997,7 +1000,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
 }
 
 .widget.socialicons span a:hover,
-.widget.profile 
+.widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch3,10%);
 }
@@ -1372,7 +1375,7 @@ input, textarea {
       padding: 0px;
       margin:0px 0px 30px 0px;
     }
-    tr:first-child { 
+    tr:first-child {
           outline: 1px solid darken(@color-swatch1,10%);
             background-color: darken(@color-swatch1,4%);
             -webkit-border-top-left-radius: 4px;
@@ -1717,7 +1720,7 @@ input, textarea {
     left:0;
     right:0;
     top:auto;
-    background-color: @color-swatch1; 
+    background-color: @color-swatch1;
     text-align: center;
 }
 
@@ -1743,7 +1746,7 @@ input, textarea {
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-prev,
 .widget.responsiveslideshow .slideshow-widget .btn-next {
     font-size: 0;
     z-index: 11;
@@ -1764,12 +1767,12 @@ input, textarea {
 
 .svg .widget.responsiveslideshow .slideshow-widget .btn-next {
   right: 10px;
-  background: image('/images/slideshow-arrow-right.svg') no-repeat center center; 
-  background-size: contain;   
+  background: image('/images/slideshow-arrow-right.svg') no-repeat center center;
+  background-size: contain;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-next {
-  background: image('/images/slideshow-arrow-right.png') no-repeat center center;   
+  background: image('/images/slideshow-arrow-right.png') no-repeat center center;
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls {
@@ -1788,7 +1791,7 @@ input, textarea {
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
 {
     background: image('/images/slideshow-pause.png') center no-repeat;
-    background-size: contain;  
+    background-size: contain;
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot
@@ -1817,11 +1820,11 @@ input, textarea {
    IPAD WIDTH
    =============================== */
 
-@media only screen and (max-width: 768px) { 
-    
+@media only screen and (max-width: 768px) {
+
     /* CUSTOM CSS */
 
-    .canvas { 
+    .canvas {
       border: none;
       width: 100%;
       margin: 0 auto;
@@ -2009,7 +2012,7 @@ input, textarea {
 
     /* SLIDESHOW */
 
-    .widget.responsiveslideshow .slideshow-image-list, 
+    .widget.responsiveslideshow .slideshow-image-list,
     .widget.responsiveslideshow .slideshow-widget {
         height:400px;
     }
@@ -2038,7 +2041,7 @@ input, textarea {
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
     footer.bk-footer {
         padding: 2.5em 0 0;
@@ -2174,7 +2177,7 @@ input, textarea {
     text-align: justify;
   }
 
-  .widget.clicktocall a.italic { 
+  .widget.clicktocall a.italic {
     font-style: italic;
   }
 
@@ -2219,7 +2222,7 @@ input, textarea {
 
 }
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         width: 960px;
         /* 1140px - 10% for margins */
