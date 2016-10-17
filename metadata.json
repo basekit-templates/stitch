@@ -1,7 +1,7 @@
 {
 	"name":"Stitch",
 	"thumbnail":"stitch.png",
-	"screenshot":"stitch.png",
+	"screenshot":"stitch-screenshot.jpg",
 	"templateType":"standard",
             "pageTypes": [
         "home"
