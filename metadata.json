@@ -1,5 +1,6 @@
 {
 	"name":"Stitch",
+	"versionTenCompatible": 1,
 	"thumbnail":"stitch.png",
 	"screenshot":"stitch-screenshot.jpg",
 	"templateType":"standard",
