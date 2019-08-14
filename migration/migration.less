@@ -10,23 +10,29 @@
 // -----------------------------
 
 
-// Template wrapper (replace with corresponding template classes)
 .main.wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
-  
-// Main content spacing (replace with corresponding template class)
 .main {
   padding: 0;
 }
 
-// Widget overflow to allow 10S overlays to display correctly
 .widget.content {
   overflow: inherit;
 }
 
+.row-overlay:before,
+.row-overlay:after {
+    background: none !important;
+}
+.row-overlay:before {
+    background-image: linear-gradient(to right, transparent , #deddd7) !important;
+}
+.row-overlay:after {
+    background-image: linear-gradient(to left, transparent , #deddd7) !important;
+}
 
 
 
@@ -36,12 +42,8 @@
 
 // Replace with corresponding template values
 @container-width: 960px;
-
-@spacing__first--desktop: 40px;
-@spacing__first--tablet:  30px;
-@spacing__first--mobile:  20px;
-
-@spacing--other: 30px;
+@spacing__first--desktop: 20px;
+@spacing--other: 20px;
 
 
 // Applies spacing to widgets to mimic container width
@@ -52,7 +54,10 @@
   margin-left: auto;
   margin-right: auto;
   max-width: @container-width;
-  width: 90%;
+  
+  @media @tablet {
+      max-width: 90%;
+  }
 }
 
 
@@ -60,26 +65,12 @@
 &.edit #page-zones__main-overlay + .widget:not(.row),
 #page-zones__main > .widget:not(.row):first-child {
   margin-top: @spacing__first--desktop;
-
-  @media @tablet {
-    margin-top: @spacing__first--tablet;
-  }
-  @media @mobile {
-    margin-top: @spacing__first--mobile;
-  }
 }
 
 
 // Move spacing to last widget in the main zone (not sections)
 #page-zones__main > .widget:not(.row):last-child {
   margin-bottom: @spacing__first--desktop;
-
-  @media @tablet {
-    margin-bottom: @spacing__first--tablet;
-  }
-  @media @mobile {
-    margin-bottom: @spacing__first--mobile;
-  }
 }
 
 
@@ -97,12 +88,7 @@
 
 // Adds spacing to the section when a widget is before it
 #page-zones__main > .widget:not(.row) + .row {
-  margin-bottom: @spacing--other;
   margin-top: @spacing--other;
-
-  &:not(:last-child) {
-       margin-bottom: 0;
-  }
 }
 
 
